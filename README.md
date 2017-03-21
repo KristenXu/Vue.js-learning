@@ -4,7 +4,7 @@ Vue.js-learning
 
 ## Catalogue
 
-* version 1.0
+* [version 1.0](https://github.com/KristenXu/Vue.js-learning/tree/master/version1.0)
 * version 2.0
 
 
