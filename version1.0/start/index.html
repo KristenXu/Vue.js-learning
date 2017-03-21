@@ -16,7 +16,7 @@
                 {{todo.text}}
             </li>
         </ul>
-        <button v-on:click="reverseMesssage">reverse message</button>
+        <button v-on:click="reverseMesssage" v-bind:disabled="disableMessage">reverse message</button>
         <br>
         <!--synthesize-->
         <input v-model="newTodo" v-on:keyup.enter="addTodo">

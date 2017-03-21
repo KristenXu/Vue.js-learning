@@ -1,4 +1,4 @@
-new Vue({
+var vm = new Vue({
     el: '#app',
     data: {
         message: 'Hello Vue.js!',
@@ -7,7 +7,8 @@ new Vue({
             { text: 'Learn JavaScript' },
             { text: 'Learn Vue.js' },
             { text: 'Build Something Awesome' }
-        ]
+        ],
+        disableMessage: false
     },
     methods: {
         reverseMesssage: function () {
