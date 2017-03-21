@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js-learning version1.0</title>
+    <script src="../../lib/vue1.0.26.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!--Data binding-->
+        <p>{{ message }}</p>
+        <input v-model="message">
+        <!--Render list-->
+        <ul>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ul>
+        <button v-on:click="reverseMesssage">reverse message</button>
+        <br>
+        <!--synthesize-->
+        <input v-model="newTodo" v-on:keyup.enter="addTodo">
+        <ul>
+            <li v-for="todo in todos">
+                <span>{{todo.text}}</span>
+                <button v-on:click="removeTodo($index)">X</button>
+            </li>
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
