@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js-learning version1.0</title>
+    <script src="../../lib/vue1.0.26.min.js"></script>
+</head>
+<body>
+<div id="example">
+    <h2>class binding</h2>
+    <div class="static" v-bind:class="{ 'class-a': isA, 'class-b': isB }">{ 'class-a': isA, 'class-b': isB }</div>
+    <div v-bind:class="classObject">classObject</div>
+    <div v-bind:class="[classA, classB]">[classA, classB]</div>
+    <div v-bind:class="[classA, { classB: isB, classC: isC }]">[classA, { classB: isB, classC: isC }]</div>
+
+    <h2>style binding</h2>
+    <div v-bind:style="styleObject">styleObject</div>
+    <div v-bind:style="[styleObjectA, styleObjectB]">[styleObjectA, styleObjectB]</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
