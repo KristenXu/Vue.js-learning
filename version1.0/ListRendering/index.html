@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js-learning version1.0</title>
+    <script src="../../lib/vue1.0.26.min.js"></script>
+</head>
+<body>
+    <ul id="example-1">
+        <h2>遍历数组</h2>
+        <li v-for="item in items">
+            {{parent}} - {{ item.message }} - {{$index}}
+        </li>
+        <br>
+        <h2>利用template渲染</h2>
+        <template v-for="item in items">
+            <li>{{ item.message }}</li>
+            <li class="divider">--------------</li>
+        </template>
+        <h2>$key遍历对象</h2>
+        <li v-for="value in items">
+            $key: {{ $key }}  value: {{ value }}
+        </li>
+        <h2>(key, value)遍历对象</h2>
+        <li v-for="(key, value) in object">
+            (key, value): {{key}}, {{value}}
+        </li>
+        <h2>v-for利用整数重复生成元素</h2>
+        <div>
+            <span v-for="n in 10">{{ n }} </span>
+        </div>
+    </ul>
+<script src="app.js"></script>
+</body>
+</html>
