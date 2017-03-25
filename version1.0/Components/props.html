@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js-learning version1.0</title>
+    <script src="../../lib/vue1.0.26.min.js"></script>
+</head>
+<body>
+<div id="propsExample">
+    <h2>props传递</h2>
+    <child msg="hello!"></child>
+    <h2>名字形式为 camelCase 的 prop 用作特性时，需要转为 kebab-case（短横线隔开）传递</h2>
+    <child-kebab my-message="hello!"></child-kebab>
+    <h2>动态props</h2>
+    <dynamic-props></dynamic-props>
+</div>
+<script src="props.js"></script>
+</body>
+</html>
