@@ -16,7 +16,7 @@
 <body>
 <div id="dynamicExample">
     <dynamic-component v-if="show" transition="fade"
-                       transition-mode="out-in"></dynamic-component>
+                       transition-mode="out-in" :item="item" v-for="item in items"></dynamic-component>
     <button v-on:click="clickHandle">click</button>
 </div>
 <script src="dynamic.js"></script>
