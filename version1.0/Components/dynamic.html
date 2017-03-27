@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js-learning version1.0</title>
+    <script src="../../lib/vue1.0.26.min.js"></script>
+    <style>
+        .fade-transition {
+            transition: opacity .3s ease;
+        }
+        .fade-enter, .fade-leave {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="dynamicExample">
+    <dynamic-component v-if="show" transition="fade"
+                       transition-mode="out-in"></dynamic-component>
+    <button v-on:click="clickHandle">click</button>
+</div>
+<script src="dynamic.js"></script>
+</body>
+</html>
